@@ -22,8 +22,8 @@ public class StudentPortalFacade {
         while (true) {
             System.out.println("\n---Student Portal---");
             System.out.println("1. View My Courses");
-            System.out.println("2. Enroll in a course.Course");
-            System.out.println("3. Exit (Unenroll) from course.Course");
+            System.out.println("2. Enroll in a course");
+            System.out.println("3. Exit from course");
             System.out.println("4. Start Learning");
             System.out.println("5. Show My Points");
             System.out.println("6. Show Leaderboard");
@@ -95,7 +95,7 @@ public class StudentPortalFacade {
         }
 
         student.addCourse(course);
-        System.out.println("You have successfully enrolled to the course: " + course.getCourseName() + " (model.Teacher: " + course.getTeacher() + ")");
+        System.out.println("You have successfully enrolled to the course: " + course.getCourseName() + " (Teacher: " + course.getTeacher() + ")");
     }
 
     private boolean promptYesNo(String question) {
@@ -125,8 +125,8 @@ public class StudentPortalFacade {
 
         Course course = student.getCourse(name);
         System.out.println("---Learning session---");
-        System.out.println("course.Course: " + course.getCourseName());
-        System.out.println("model.Teacher: " + course.getTeacher());
+        System.out.println("Course: " + course.getCourseName());
+        System.out.println("Teacher: " + course.getTeacher());
 
         course.deliverContent();
 

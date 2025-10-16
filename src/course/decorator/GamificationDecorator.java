@@ -12,7 +12,7 @@ public class GamificationDecorator extends CourseDecorator{
     @Override
     public void deliverContent(){
         super.deliverContent();
-        System.out.println("Gamification activated. Now after every lessong you will earn some points.");
+        System.out.println("Gamification activated. Now after every lesson you will earn some points.");
     }
 
     public boolean isGamified() {
